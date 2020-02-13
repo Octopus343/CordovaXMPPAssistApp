@@ -1,0 +1,358 @@
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:15px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    background-color:white;
+    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size:12px;
+    animation:fadein 2000ms;
+}
+
+.app {
+    background: url(../images/cordova.png) no-repeat center top;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 50px;
+    width: 225px;
+    text-align: center;
+    padding: 180px 0px 0px 0px;
+    margin: -115px 0px 0px -112px;
+}
+
+.app2 {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    height: 100px;
+    width: 225px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: -115px 0px 0px -112px;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin: 0px 30px;
+    padding: 2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.online, .offline {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: green;
+    font-size: 20px;
+    margin: 0px 30px;
+    padding: 2px 0px;
+}
+
+.offline {
+    color: red;
+}
+
+#container {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 225px;
+    padding: 0px 0px 0px 0px;
+}
+
+#status_bar {
+    display:inline-block;
+    position: relative;
+    text-align:left;
+    top: 1%;
+}
+
+#theImgHealth {
+    height: 20%;
+    width: 20%;
+    opacity: 0.2;
+    position:relative;
+    margin: 0px 30px;
+    padding: 2px 0px;
+    
+}
+
+.buttons {
+    text-align:center;
+    display:inline-block;
+    font-size: 20px;
+    background-color: #333333;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;    color: #FFFFFF;
+    height: 15%;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+.buttons:hover {
+    background: #778899;
+}
+
+#deviceready {
+    margin-top: 30px;
+}
+
+
+.plug_st {
+    display:inline;
+    position:relative;
+    text-align:left;
+    font-size: 15px;
+}
+
+.update_text {
+    text-align: center;
+}
+
+table {
+    border:2px solid black;
+    margin: 5px 40px 10px 0px;
+}
+
+
+p {
+    color: blue;
+}
+
+dt {
+    text-align: left;
+    font-size: 15px;
+    margin:5px;
+}
+
+#hint {
+    display:inline-block;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+#socket1, #socket2 {
+    top:20px;
+    width:100px;
+}
+
+#plug1_container, #plug2_container {
+    position:flex;
+    align-items: center;
+    margin-bottom:100px;
+}
+
+#theImgPlug1, #theImgPlug2 {
+width:20%;
+height:40%;
+text-align:left;
+float:left;
+}
+
+
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: sk-chase-dot 2.0s infinite ease-in-out both;
+  text-align: center;
+}
+
+.sk-chase-dot:before {
+  content: '';
+  width: 20%;
+  height: 20%;
+  background-color: black;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2.0s infinite ease-in-out both;
+  position:relative;
+  display:block;
+}
+
+.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+
+@keyframes sk-chase {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% { transform: rotate(360deg); }
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4);
+  } 100%, 0% {
+    transform: scale(1.0);
+  }
+}
+
+
+.wait_anim {
+    position:relative;
+    display:inline-block;
+    margin:15px;
+}
+
+.plug_label {
+    display:inline-block;
+    position:relative;
+    text-align:left;
+    float:top;
+    top:-30px;
+    font-size:16px;
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22.6px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17.3px;
+  width: 17.3px;
+  left: 2.6px;
+  bottom: 2.6px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17.3px);
+  -ms-transform: translateX(17.3px);
+  transform: translateX(17.3px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  }
+
+.switch {
+    display:flex;
+    position:relative;
+    float:top;
+    margin-bottom:10px;
+}
+
+#plug1_name, #plug2_name {
+    position:absolute;
+    display:inline-block;
+    text-align:left;
+    left:50px;
+    width:180px;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }

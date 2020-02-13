@@ -1,0 +1,72 @@
+<!doctype html>
+<style>
+    body {
+        background-color: white;
+    }
+
+    title {
+        color: black;
+    }
+
+    
+
+
+    #container {
+        position: relative;
+        display: inline-block;
+        height: 100px;
+        width: 225px;
+        padding: 0px 0px 0px 0px;
+    }
+
+</style>
+<html>
+<head>
+    <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/socketset.js"></script>
+     <script type="text/javascript" src="scripts/jquery.xmpp.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Sockets Setup</title>
+ </head>
+
+<body>
+    <div class="app2">
+        <form action="" method=post>
+            <span class="plug_label">PlugOne Set:</span>
+        <div id="plug1_container">
+            <label class="switch">
+            <input type="checkbox" id="plug1_state">
+            <span class="slider round"></span>
+            <span id="plug1_name"></span>
+            </label>
+        <img id="theImgPlug1" src="images/plug-icon-256.png">
+            <span>Rename:</span>
+        <input type="text" name=socket1 id="socket1" placeholder="'Plug one'">
+        </div>
+        <span class="plug_label">PlugTwo Set:</span>
+        <div id="plug2_container">
+            <label class="switch">
+            <input type="checkbox" id="plug2_state">
+            <span class="slider round"></span>
+            <span id="plug2_name"></span>
+            </label>
+        <img id="theImgPlug2" src="images/plug-icon-256.png">
+            <span>Rename:</span>
+        <input type="text" name=socket2 id="socket2" placeholder="'Plug two'">
+        </div>
+        </form>
+       
+        <div class="menue_but">
+            
+            <button class="buttons" id="socketsave">Save</button>
+            <p><a class=button onclick="window.location.href='myAppPage.html'">Back</a></p>
+      </div>
+        <span id="presense"></span>
+       <span id="hint">Hint: Type something like: Kitchen lights...<span>
+   </div>
+</body>
+</html>
